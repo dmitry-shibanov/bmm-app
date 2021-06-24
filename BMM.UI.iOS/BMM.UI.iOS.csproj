@@ -23,15 +23,12 @@
     <MtouchLink>SdkOnly</MtouchLink>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignKey>iPhone Developer</CodesignKey>
     <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
     <MtouchArch>i386, x86_64</MtouchArch>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
-    <CodesignProvision>
-    </CodesignProvision>
     <CodesignExtraArgs />
     <CodesignResourceRules />
     <MtouchExtraArgs>
