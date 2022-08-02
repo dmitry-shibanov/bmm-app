@@ -1,9 +1,6 @@
-using Android;
 using Android.App;
 using Android.Content;
 using Android.OS;
-using BMM.Core.Helpers;
-using BMM.Core.Implementations.Notifications.Data;
 using BMM.UI.Droid.Application.Constants;
 using MvvmCross.Platforms.Android.Views;
 
@@ -16,7 +13,6 @@ namespace BMM.UI.Droid
         NoHistory = true,
         Name = "bmm.ui.droid.SplashScreenActivity",
         Exported = true)]
-    [IntentFilter(new[] {PodcastNotification.Type, GeneralNotification.Type, WordOfFaithNotification.Type}, Categories = new[] {Intent.CategoryDefault})]
     public class SplashScreenActivity : MvxSplashScreenActivity
     {
         public static Intent UnhandledIntent;
@@ -27,7 +23,6 @@ namespace BMM.UI.Droid
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            AppCenterHelper.DroidRegister();
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
