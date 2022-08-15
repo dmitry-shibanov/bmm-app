@@ -40,7 +40,7 @@ steps:
       configuration: Release
       msbuildVersionOption: latest
       msbuildArchitectureOption: x64
-      msbuildArguments: '/p:SolutionDir="$(Build.SourcesDirectory)" -p:AndroidPackageFormat=aab -t:SignAndroidPackage -p:AndroidKeyStore=True -p:AndroidNdkDirectory="$(ANDROID_NDK_LATEST_HOME)"'
+      msbuildArguments: '/p:SolutionDir="$(Build.SourcesDirectory)" -p:AndroidPackageFormat=aab -t:SignAndroidPackage -p:AndroidKeyStore=False -p:AndroidNdkDirectory="$(ANDROID_NDK_LATEST_HOME)"'
 
   - task: XamarinAndroid@1
     displayName: 'Build APK'
